@@ -59,7 +59,8 @@ default:
 }
 ```
 
-We can use 0...10 to define range between which the value will be checked against, inclusive of the two values. ````
+We can use 0...10 to define range between which the value will be checked against, inclusive of the two values. 
+```
 let day = "tuesday"
 switch day.lowercased(){
 case "monday", "tuesday", "wednesday", "thursday", "friday":
