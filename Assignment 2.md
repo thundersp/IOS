@@ -44,6 +44,34 @@ default:
     print("x is not zero or one")
 }
 ```
+We dont need to use parentheses for conditions in switch statements, or break statements.
+```
+let age = 25
+switch age {
+case 0...10:
+    print("age is between 0 and 10")
+case 11...20:
+    print("age is between 11 and 20")
+case 21...30:
+    print("age is between 21 and 30")
+default:
+    print("age is not between 0 and 30")
+}
+```
+
+We can use 0...10 to define range between which the value will be checked against, inclusive of the two values. ````
+let day = "tuesday"
+switch day.lowercased(){
+case "monday", "tuesday", "wednesday", "thursday", "friday":
+    print("Weekday")
+case "saturday", "sunday":
+    print("Weekend")
+default:
+    print("Invalid day")
+}
+```
+
+We can pass multiple values to a case statement, separated by commas, to check if the value matches any of the values.
 
 ### Boolean Expressions and Type checking
 
